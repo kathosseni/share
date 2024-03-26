@@ -5,8 +5,6 @@ import { BiSearchAlt } from 'react-icons/bi'
 import { TbMessageCircle } from 'react-icons/tb'
 import { MdNotificationsOutline } from 'react-icons/md'
 
-
-
 const Top = () => {
   return (
     <div className='topSection'>
@@ -25,7 +23,7 @@ const Top = () => {
           <TbMessageCircle className='icon'/>
           <MdNotificationsOutline className='icon'/>
           <div className="adminImage">
-            <img src="" alt="Admin Image" />
+            {/* <img src={img} alt="Admin Image" /> */}
           </div>
         </div>
       </div>
