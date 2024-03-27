@@ -1,1 +1,122 @@
-/*# sourceMappingURL=Listing.css.map */
+:root {
+  --primaryColor: hsl(265, 98%, 67%);
+  --hoverColor: hsl(272, 61%, 34%);
+  --paleColor: hsl(265, 100%, 86%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(0, 0%, 41%);
+  --greyText: hsl(0, 67%, 2%);
+  --bgColor: hsl(113, 11%, 85%);
+  --inputColor: hsl(330, 12%, 97%);
+  --itemCardColor: hsl(280, 5%, 88%);
+  --itemCardHover: hsl(280, 31%, 77%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+.listingSection {
+  flex-basis: 70%;
+}
+.listingSection .heading {
+  width: 100%;
+  justify-content: space-between;
+}
+.listingSection .heading h1 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.listingSection .heading .btn {
+  border: 1px solid transparent;
+}
+.listingSection .heading .btn:hover {
+  border: 1px solid var(--primaryColor);
+}
+.listingSection .setContainer {
+  width: 100%;
+  margin: 1rem 0;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listingSection .setContainer .singleItem {
+  position: relative;
+  width: 130px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--itemCardColor);
+  transition: 0.3s ease;
+}
+.listingSection .setContainer .singleItem:hover {
+  background: var(--itemCardHover);
+  box-shadow: 0 2px 2px var(--inputColor);
+  transition: 0.3s ease;
+}
+.listingSection .setContainer .singleItem img {
+  max-width: 100px;
+}
+.listingSection .setContainer .singleItem .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--primaryColor);
+}
+.listingSection .setContainer .singleItem h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 0.5rem 0;
+}
+.listingSection .sharing {
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.listingSection .sharing .topSharing .heading, .listingSection .sharing .featuredSharing .heading {
+  padding: 1rem 0;
+}
+.listingSection .sharing .topSharing .heading .btn, .listingSection .sharing .featuredSharing .heading .btn {
+  padding: 0.5rem 1rem;
+}
+.listingSection .sharing .topSharing .card, .listingSection .sharing .featuredSharing .card {
+  padding: 1rem 0.5rem;
+  border-radius: 1rem;
+  background: var(--whiteColor);
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.listingSection .sharing .topSharing .card .users, .listingSection .sharing .featuredSharing .card .users {
+  padding-right: 0.5rem;
+  border-right: 2px solid var(--greyText);
+}
+.listingSection .sharing .topSharing .card .users img, .listingSection .sharing .featuredSharing .card .users img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--inputColor);
+  transition: 0.5s ease;
+}
+.listingSection .sharing .topSharing .card .users img:hover, .listingSection .sharing .featuredSharing .card .users img:hover {
+  transform: translateY(-10px);
+}
+.listingSection .sharing .topSharing .card .cardText span, .listingSection .sharing .featuredSharing .card .cardText span {
+  color: var(--blackColor);
+  font-weight: 500;
+}
+.listingSection .sharing .topSharing .card .cardText span small, .listingSection .sharing .featuredSharing .card .cardText span small {
+  font-weight: 400;
+}
+.listingSection .sharing .topSharing .card .cardText span small .date, .listingSection .sharing .featuredSharing .card .cardText span small .date {
+  margin-left: 1rem;
+}/*# sourceMappingURL=Listing.css.map */

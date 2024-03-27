@@ -5,6 +5,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { TbMessageCircle } from "react-icons/tb";
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import { BsArrowRightShort } from "react-icons/bs";
+import { BsQuestionCircle } from "react-icons/bs";
 
 import user3 from "../../../Assets/user3.png";
 import img1 from "../../../Assets/img1.png";
@@ -51,7 +52,7 @@ const Top = () => {
           </div>
         </div>
 
-        <div className="leftCard fle">
+        <div className="leftCard flex">
           <div className="main flex">
             <div className="textDiv">
               <h1>My Stat</h1>
@@ -73,20 +74,20 @@ const Top = () => {
             <div className="imgDiv">
               <img src={img1} alt="Image Name" />
             </div>
+          </div>
 
-            {/* <div className="sideBarCard">
-              <BsQuestionCircle className="icon" />
-              <div className="cardContent">
-                <div className="circle1"></div>
-                <div className="circle2"></div>
+          <div className="sideBarCard">
+            <BsQuestionCircle className="icon" />
+            <div className="cardContent">
+              <div className="circle1"></div>
+              <div className="circle2"></div>
 
-                <h3>Help center</h3>
-                <p>
-                  Having trouble in Share, please contact us for more questions.
-                </p>
-                <button className="btn"> Go to help center</button>
-              </div>
-            </div> */}
+              <h3>Help center</h3>
+              <p>
+                Having trouble in Share, please contact us for more questions.
+              </p>
+              <button className="btn"> Go to help center</button>
+            </div>
           </div>
         </div>
       </div>
@@ -95,3 +96,14 @@ const Top = () => {
 };
 
 export default Top;
+<div className="sideBarCard">
+  <BsQuestionCircle className="icon" />
+  <div className="cardContent">
+    <div className="circle1"></div>
+    <div className="circle2"></div>
+
+    <h3>Help center</h3>
+    <p>Having trouble in Share, please contact us for more questions.</p>
+    <button className="btn"> Go to help center</button>
+  </div>
+</div>;
