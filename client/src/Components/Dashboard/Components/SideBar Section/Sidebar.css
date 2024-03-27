@@ -83,7 +83,8 @@
 }
 .sideBar .sideBarCard {
   width: 100%;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-align: center;
   position: relative;
 }
