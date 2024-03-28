@@ -195,6 +195,7 @@
 }
 .topSection .cardSection .leftCard .sideBarCard {
   display: none;
+  height: 100%;
   width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -229,7 +230,7 @@
 .topSection .cardSection .leftCard .sideBarCard .cardContent p {
   font-size: var(--normalFontSize);
   color: var(--textColor);
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-weight: 500;
 }
 .topSection .cardSection .leftCard .sideBarCard .cardContent .btn {
@@ -271,6 +272,6 @@
     height: 10px !important;
   }
   .cardSection .leftCard .sideBarCard {
-    display: block;
+    display: block !important;
   }
 }/*# sourceMappingURL=Top.css.map */

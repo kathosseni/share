@@ -228,6 +228,7 @@
 
       .sideBarCard {
         display: none;
+        height: 100%;
         width: 100%;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -264,7 +265,7 @@
           p {
             font-size: var(--normalFontSize);
             color: var(--textColor);
-            padding-bottom: 1rem;
+            padding-bottom: 2rem;
             font-weight: 500;
           }
 
@@ -318,7 +319,7 @@
         height: 10px !important;
 
         .sideBarCard {
-            display: block;
+            display: block !important;
         }
     }
   }
