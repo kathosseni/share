@@ -108,7 +108,7 @@
   transition: 0.5s ease;
 }
 .listingSection .sharing .topSharing .card .users img:hover, .listingSection .sharing .featuredSharing .card .users img:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 .listingSection .sharing .topSharing .card .cardText span, .listingSection .sharing .featuredSharing .card .cardText span {
   color: var(--blackColor);
