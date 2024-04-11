@@ -274,4 +274,62 @@
   .cardSection .leftCard .sideBarCard {
     display: block !important;
   }
+}
+@media screen and (max-width: 918px) {
+  .headerSection .searchBar {
+    display: none;
+  }
+  .headerSection .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 725px) {
+  .cardSection .leftCard .main {
+    width: 100%;
+  }
+  .cardSection .leftCard .sideBarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .headerSection .adminDiv {
+    display: none;
+  }
+  .headerSection .title {
+    text-align: center;
+    margin: auto;
+  }
+  .cardSection .rigthCard {
+    text-align: center;
+  }
+  .cardSection .rigthCard .buttons {
+    margin: auto;
+    flex-direction: column;
+  }
+  .cardSection .rigthCard .buttons .btn {
+    width: 100%;
+  }
+  .cardSection .leftCard .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardSection .leftCard .main .textDiv {
+    margin: auto;
+  }
+  .cardSection .leftCard .main::before {
+    width: 100% !important;
+  }
+  .cardSection .leftCard .main .imgDiv {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  .topSection .cardSection .rigthCard {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .topSection .cardSection .rigthCard h1 {
+    font-size: var(--h2FontSize);
+  }
 }/*# sourceMappingURL=Top.css.map */

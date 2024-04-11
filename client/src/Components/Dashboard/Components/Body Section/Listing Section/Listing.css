@@ -119,4 +119,23 @@
 }
 .listingSection .sharing .topSharing .card .cardText span small .date, .listingSection .sharing .featuredSharing .card .cardText span small .date {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .listingSection .sharing .card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 918px) {
+  .listingSection .singleItem {
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .listingSection .sharing {
+    flex-direction: column;
+  }
+  .listingSection .sharing .card {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=Listing.css.map */

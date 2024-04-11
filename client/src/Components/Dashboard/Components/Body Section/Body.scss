@@ -11,3 +11,12 @@
         align-items: flex-start;
     }
 }
+
+// MEDIA QUERIES ===============>
+
+@media screen and (max-width: 918px) {
+    .bottom {
+        flex-direction: column;
+
+    }
+}
