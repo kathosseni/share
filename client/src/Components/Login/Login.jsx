@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Login.css";
 import "../../App.css"
 import { Link, NavLink } from "react-router-dom";
@@ -11,6 +11,20 @@ import { BsFillShieldLockFill } from "react-icons/bs";
 import { AiOutlineSwapRight } from "react-icons/ai";
 
 const Login = () => {
+  
+  const[loginUserName, setLoginUserName] = useState('')
+  const[loginPassword, setLoginPassword] = useState('')
+
+  // Onclick handling
+  const loginUser = () => {
+    Axios.post('http://localhost:3002/login', {
+      LoginUserName : loginUserName,
+      LoginPassword : loginPassword
+    }).then((response) => {
+      console.log(response)
+    })
+  }
+
   return (
     <div className="loginPage flex">
       <div className="container flex">
@@ -43,7 +57,9 @@ const Login = () => {
               <label htmlFor="username">Username</label>
               <div className="input flex">
                 <FaUserShield className="icon" />
-                <input type="text" id="username" placeholder="Enter username" />
+                <input type="text" id="username" placeholder="Enter username" 
+                onChange={(event)=>{setLoginUserName(event.target.value)
+                }}/>
               </div>
             </div>
 
@@ -51,11 +67,13 @@ const Login = () => {
               <label htmlFor="password">Password</label>
               <div className="input flex">
                 <BsFillShieldLockFill className="icon" />
-                <input type="text" id="password" placeholder="Enter Password" />
+                <input type="text" id="password" placeholder="Enter Password" 
+                onChange={(event)=>{setLoginPassword(event.target.value)
+                }}/>
               </div>
             </div>
 
-            <button type="submit" className="btn flex">
+            <button type="submit" className="btn flex" onClick={loginUser}>
               <span>Login</span>
               <AiOutlineSwapRight className="icon" />
             </button>
@@ -70,5 +88,6 @@ const Login = () => {
     </div>
   );
 };
+
 
 export default Login;
